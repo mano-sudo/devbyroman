@@ -33,31 +33,29 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach((link) => link.classList.remove("active"));
     document.querySelector('.nav-link[href="#home"]').classList.add("active");
 
-    // Update active link on scroll (with slight delay to fix early trigger)
-    setTimeout(() => {
-      window.addEventListener("scroll", function () {
-        const scrollPosition = window.scrollY;
-        const sections = document.querySelectorAll("section");
+    // Update active link on scroll
+    window.addEventListener("scroll", function () {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll("section");
 
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 100;
-          const sectionHeight = section.offsetHeight;
-          const sectionId = section.getAttribute("id");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute("id");
 
-          if (
-            scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
-          ) {
-            navLinks.forEach((link) => {
-              link.classList.remove("active");
-              if (link.getAttribute("href") === `#${sectionId}`) {
-                link.classList.add("active");
-              }
-            });
-          }
-        });
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${sectionId}`) {
+              link.classList.add("active");
+            }
+          });
+        }
       });
-    }, 100); // Delay to allow full content/image load
+    });
 
     // Update active link on click
     navLinks.forEach((link) => {
@@ -116,7 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Initialize all functions
-  window.scrollTo(0, 0); // Force scroll to top on initial load
   window.myMenuFunction = myMenuFunction; // Make it globally available
   window.onscroll = function () {
     headerShadow();
