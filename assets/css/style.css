@@ -59,13 +59,15 @@ i {
 /* ========== BUTTON STYLES ========== */
 .contact-btn {
   font-weight: 500;
-  padding: 12px 20px;
+  height: 40px;
+  padding: 0px 20px;
   background: var(--first-color);
   color: var(--color-white);
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s;
+  line-height: 40px;
 }
 
 .contact-btn:hover {
@@ -677,7 +679,7 @@ footer {
 .top-footer p {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-color-third);
+  color: var(--first-color);
   text-align: center;
   margin-bottom: 20px;
 }

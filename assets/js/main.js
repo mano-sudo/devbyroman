@@ -122,3 +122,21 @@ document.addEventListener("DOMContentLoaded", function () {
   initTypedJS();
   initScrollReveal();
 });
+
+//hire me button function
+const email = "romancaseres929@gmail.com";
+const subject = "Hiring Inquiry";
+const subject1 = "";
+const body1 = "";
+const body =
+  "Hi Roman,%0AI found your portfolio and would like to hire you for a project.";
+const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+const gmailUrl1 = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject1}&body=${body1}`;
+
+document.getElementById("hireMeBtn").addEventListener("click", function () {
+  window.open(gmailUrl, "_blank");
+});
+
+document.getElementById("getInTouchBtn").addEventListener("click", function () {
+  window.open(gmailUrl1, "_blank");
+});

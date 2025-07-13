@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/navigation.css" />
     <link
@@ -44,7 +45,9 @@
           </ul>
         </div>
         <div class="nav-button">
-          <button class="contact-btn">Get in Touch</button>
+          <a href="contact.html">
+            <button class="contact-btn">Get in Touch</button>
+          </a>
         </div>
         <div class="nav-menu-btn">
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -67,16 +70,42 @@
               </p>
             </div>
             <div class="featured-text-btn">
-              <button class="btn blue-btn">Hire Me</button>
-              <button class="btn">
+              <button class="btn blue-btn" id="hireMeBtn">Hire Me</button>
+              <a
+                href="assets/cv/Roman-Caseres-Jr-Resume.pdf"
+                target="_blank"
+                class="btn"
+              >
                 Download CV <i class="uil uil-file-alt"></i>
-              </button>
+              </a>
             </div>
             <div class="social_icons">
-              <div class="icon"><i class="uil uil-instagram"></i></div>
-              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-              <div class="icon"><i class="uil uil-facebook-f"></i></div>
-              <div class="icon"><i class="uil uil-github-alt"></i></div>
+              <a
+                href="https://www.instagram.com/romancaseres_/"
+                target="_blank"
+                class="icon"
+                ><i class="uil uil-instagram"></i
+              ></a>
+              <a
+                href="http://www.linkedin.com/in/roman-caseres"
+                target="_blank"
+                class="icon"
+                ><i class="uil uil-linkedin-alt"></i
+              ></a>
+
+              <a
+                href="https://www.facebook.com/roman1010"
+                target="_blank"
+                class="icon"
+                ><i class="uil uil-facebook-f"></i
+              ></a>
+
+              <a
+                href="https://github.com/mano-sudo"
+                target="_blank"
+                class="icon"
+                ><i class="uil uil-github-alt"></i
+              ></a>
             </div>
           </div>
           <div class="featured-image">
@@ -193,27 +222,29 @@
                 <h3>Let's Connect</h3>
 
                 <!-- Contact Button -->
-                <a
-                  href="mailto:youremail@example.com"
-                  class="btn contact"
-                  style="text-decoration: none"
-                >
-                  <i class="uil uil-envelope"></i> Get in Touch<i
-                    class="uil uil-arrow-right"
-                  ></i>
-                </a>
+                <button id="getInTouchBtn">
+                  <a
+                    href="mailto:romancaseres929@gmail.com"
+                    class="btn contact"
+                    style="text-decoration: none"
+                  >
+                    <i class="uil uil-envelope"></i> Get in Touch<i
+                      class="uil uil-arrow-right"
+                    ></i>
+                  </a>
+                </button>
 
                 <!-- Social Buttons -->
                 <div class="social-links">
                   <a
-                    href="https://www.linkedin.com/in/yourprofile"
+                    href="https://www.linkedin.com/in/roman-caseres"
                     class="btn linkedin"
                     style="text-decoration: none"
                   >
                     <i class="uil uil-linkedin"></i> LinkedIn
                   </a>
                   <a
-                    href="https://github.com/yourprofile"
+                    href="https://github.com/mano-sudo"
                     class="btn github"
                     style="text-decoration: none"
                   >
