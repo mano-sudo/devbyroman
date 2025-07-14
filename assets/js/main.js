@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       });
-    }, 100); // Delay to allow full content/image load
+    }, 200); // Delay to allow full content/image load
 
     // Update active link on click
     navLinks.forEach((link) => {
