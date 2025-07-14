@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navigation.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon1.png"
+      type="image/x-icon"
+    />
+    <style>
+      .group:hover {
+        background-color: #f5f3ff;
+      }
+      .fade-in {
+        animation: fadeIn 0.3s ease-out forwards;
+      }
+
+      .fade-out {
+        animation: fadeOut 0.2s ease-in forwards;
+      }
+
+      .fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+      }
+      ul li::marker {
+        color: #a855f7;
+        font-size: 15px;
+      }
+      @media (min-width: 768px) {
+        ul li::marker {
+          font-size: 20px;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+          transform: scale(1);
+        }
+        to {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+      }
+    </style>
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="header">
+        <div class="nav-logo">
+          <img src="assets/images/logo.png" alt="logo" />
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html#home" class="nav-link active">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#projects" class="nav-link">Showcase</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <a href="contact.html">
+            <button class="contact-btn">Get in Touch</button>
+          </a>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <div id="pageContent" class="opacity-0">
+        <section class="section -mb-12" id="projects">
+          <div class="text-center mt-10 sm:mt-20">
+            <h1
+              class="font-semibold text-3xl sm:text-2xl md:text-5xl text-[var(--text-color-second)] mb-2.5"
+            >
+              A small selection of
+              <span class="text-[var(--first-color)]">Recent Projects</span>
+            </h1>
+            <p
+              class="text-sm sm:text-xs md:text-lg text-gray-500 text-center max-w-3xl mx-auto mt-4 px-6"
+            >
+              Explore detailed case studies of projects that showcase technical
+              expertise and real-world impact
+            </p>
+          </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 lg:grid-cols-2 gap-y-6 p-6">
+          <div
+            class="group bg-white rounded-2xl border border-gray-100 shadow-xl p-6 w-full max-w-sm mx-auto transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:border-purple-200 cursor-pointer"
+          >
+            <a id="amsCard">
+              <div
+                class="bg-cover bg-no-repeat bg-center p-6 rounded-2xl relative overflow-hidden h-40"
+                style="background-image: url('assets/projects/AMS.png')"
+              ></div>
+
+              <!--Text Content-->
+              <div class="mt-5">
+                <h3 class="font-bold text-lg group-hover:text-purple-500">
+                  Attendance Monitoring System
+                </h3>
+                <p class="text-sm text-gray-600 mt-2 leading-snug">
+                  Developed a web-based attendance monitoring system that
+                  enables employees...
+                </p>
+                <!--Tags-->
+                <div class="flex flex-wrap gap-x-1 gap-y-2 mt-5">
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md"
+                    ><i class="devicon-php-plain text-2xl"></i>PHP</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 px-0 rounded-md"
+                    ><i class="devicon-html5-plain"></i> HTML</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md md:gap-6"
+                    ><i class="devicon-css3-plain"></i> CSS</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-1 rounded-md"
+                    ><i class="devicon-javascript-plain"></i> JAVASCIPT</span
+                  >
+                  <p
+                    class="inline-flex items-center gap-1 justify-center text-gray-500 text-xs sm:text-xs"
+                  >
+                    +2 more
+                  </p>
+                </div>
+                <span class="flex items-center justify-between gap-6">
+                  <button
+                    id="amsBtn"
+                    class="text-sm sm:text-sm text-purple-500 font-medium mt-5 ml-2"
+                  >
+                    View Details
+                  </button>
+                  <button id="amsExpandBtn" class="text-purple-500 mt-3">
+                    <i class="uil uil-expand-from-corner text-xl"></i>
+                  </button>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl border border-gray-100 shadow-xl p-6 w-full max-w-sm mx-auto transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:border-purple-200 cursor-pointer"
+          >
+            <a id="osCard">
+              <div
+                class="bg-cover bg-no-repeat bg-center p-6 rounded-2xl relative overflow-hidden h-40"
+                style="background-image: url(assets/projects/bks.png)"
+              ></div>
+
+              <div class="mt-5">
+                <h3 class="font-bold text-lg group-hover:text-purple-500">
+                  Ordering System
+                </h3>
+                <p class="text-sm text-gray-500 mt-2 leading-snug">
+                  Developed a full-stack burger ordering system using PHP,
+                  MySQL, Tailwind CSS, and JavaScript...
+                </p>
+                <div class="flex flex-wrap gap-x-1 gap-y-2 mt-5">
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md"
+                    ><i class="devicon-php-plain text-2xl"></i>PHP</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md"
+                    ><i class="devicon-html5-plain"></i>HTML</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md md:gap-6"
+                    ><i class="devicon-css3-plain"></i>CSS</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-sm md:text-sm px-3 py-0 rounded-md"
+                  >
+                    <i class="devicon-tailwindcss-original"></i>
+                    TAILWIND</span
+                  >
+                  <p
+                    class="inline-flex items-center gap-1 justify-center text-gray-500 text-xs sm:text-xs"
+                  >
+                    +2 more
+                  </p>
+                </div>
+                <span class="flex items-center justify-between">
+                  <button
+                    id="osBtn"
+                    class="text-sm sm:text-sm text-purple-500 font-medium mt-5 ml-2"
+                  >
+                    View Details
+                  </button>
+                  <button id="osExpandBtn" class="mt-3 text-purple-500">
+                    <i class="uil uil-expand-from-corner text-xl"></i>
+                  </button>
+                </span>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!--AMS FULL DIALOG-->
+      <div
+        id="amsModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden"
+      >
+        <div
+          class="bg-white rounded-4xl shadow-xl w-full max-w-4xl max-h-[70vh] mt-10 p-6 relative border-b border-b-gray-700 overflow-y-auto"
+        >
+          <!-- Modal content here -->
+          <button
+            id="amsCloseBtn"
+            class="absolute top-4 right-4 text-rose-600 text-2xl font-bold"
+          >
+            &times;
+          </button>
+
+          <h3
+            class="text-4xl md:text-3xl font-semibold mb-1 text-black-950 md:px-9 md:text-4xl"
+          >
+            Attendance Monitoring <span class="text-purple-500"> System</span>
+          </h3>
+
+          <p
+            class="inline-text items-center text-xs mt-0 text-gray-700 p-1 md:px-10 md:text-base font-light"
+          >
+            A web-based attendance monitoring system built with PHP, MySQL,
+            Bootstrap, and JavaScript. Enables real-time logging of employee
+            time-in/out, automated attendance tracking, and report generation.
+            Features an intuitive admin dashboard for employee and schedule
+            management, with a responsive UI and efficient backend integration
+            for streamlined workforce monitoring.
+          </p>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Project Objective
+          </h1>
+          <p
+            class="font-light text-gray-700 px-1 text-xs md:text-base font-light md:px-9 mt-2"
+          >
+            Build a web-based attendance system for real-time time-in/out
+            tracking, automated reporting, and efficient employee and schedule
+            management through a user-friendly admin dashboard.
+          </p>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Key Features
+          </h1>
+          <ul
+            class="list-disc list-inside px-1 md:px-9 text-xs md:text-base font-light text-gray-700 mt-2 space-y-2"
+          >
+            <li>Developed real-time employee time-in/out logging system</li>
+            <li>
+              Created admin dashboard for seamless employee and schedule
+              management
+            </li>
+            <li>
+              Implemented responsive UI using Bootstrap for multi-device access
+            </li>
+            <li>Ensured secure backend integration with PHP/MySQL database</li>
+          </ul>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Technologies & Implementation
+          </h1>
+          <p
+            class="font-light text-gray-700 px-1 text-xs md:text-base font-light md:px-9 mt-2"
+          >
+            Built with PHP and MySQL for backend and data management. Used HTML,
+            JavaScript, and Tailwind CSS to create a responsive, user-friendly
+            interface for attendance tracking and admin control.
+          </p>
+          <div
+            class="flex flex-wrap gap-1 px-1 mt-3 md:text-base md:px-9 md:mt-3 md:gap-3"
+          >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-php-plain text-2xl"></i>
+              PHP</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-html5-plain"></i>
+              HTML</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-css3-plain"></i>
+              CSS</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-javascript-plain"></i>
+              JavaScript</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-mysql-original"></i>
+              MySQL</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-bootstrap-plain"></i>
+              Bootstrap</span
+            >
+          </div>
+
+          <div
+            class="felx flex-col items-center justify-center mt-5 bg-yellow-50 px-1 rounded-lg border-2 border-yellow-100 border-solid md:ml-9 md:mr-9"
+          >
+            <h1
+              class="text-orange-900 mt-2 ml-2 font-medium md:mt-3 md:ml-5 md:text-lg"
+            >
+              <i class="uil uil-clipboard-notes"></i>Important Notice
+            </h1>
+            <p class="text-yellow-800 mt-2 ml-2 mb-2 font-light text-sm">
+              Admin access is restricted, but you can view a preview of its
+              features below.
+            </p>
+            <a href="#" class="text-sm ml-2 text-purple-500"
+              >View here<i class="uil uil-external-link-alt ml-1"></i
+            ></a>
+          </div>
+
+          <a href="https://bfpbpansol.byethost7.com/?i=1" target="_blank">
+            <button
+              class="flex items-center justify-center gap-1 mt-3 px-1 bg-purple-600 text-white text-xs font-semibold px-4 py-2 md:text-base md:font-semibold md:px-4 md:py-2 md:gap-1 md:ml-9 md:mt-10 rounded-lg"
+            >
+              <i class="uil uil-external-link-alt text-lg md:text-xl"></i> View
+              Live Site
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!--Ordering system Dialog-->
+      <div
+        id="osModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <div
+          class="bg-white rounded-4xl shadow-xl w-full max-w-4xl max-h-[70vh] mt-10 p-6 relative border-b border-b-gray-700 overflow-y-auto"
+        >
+          <button
+            id="osCloseBtn"
+            class="absolute top-3 right-3 text-gray-700 text-xl font-bold"
+          >
+            &times;
+          </button>
+          <h3
+            class="text-4xl md:text-3xl font-semibold mb-1 text-black-950 md:px-9 md:text-4xl"
+          >
+            Burger <span class="text-purple-500"> Ka </span>Samen Ordering
+            <span class="text-purple-500"> System</span>
+          </h3>
+
+          <p
+            class="inline-text items-center text-xs mt-0 text-gray-700 p-1 md:px-10 md:text-base font-light"
+          >
+            A full-stack burger ordering system built with PHP, MySQL, Tailwind
+            CSS, and JavaScript. Supports customer ordering with cart and
+            checkout features, and includes an admin dashboard for managing
+            products, orders, and users. Designed with a responsive UI and
+            efficient backend.
+          </p>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Project Objective
+          </h1>
+          <p
+            class="font-light text-gray-700 px-1 text-xs md:text-base font-light md:px-9 mt-2"
+          >
+            Develop a responsive, full-stack burger ordering platform that
+            streamlines the customer experience and provides efficient order and
+            product management for administrators.
+          </p>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Key Features
+          </h1>
+          <ul
+            class="list-disc list-inside px-1 md:px-9 text-xs md:text-base font-light text-gray-700 mt-2 space-y-2"
+          >
+            <p class="font-semibold ml-1">Customer Side:</p>
+            <li>Browse interactive menu with product images and categories</li>
+            <li>Add items to cart and update quantity</li>
+            <li>Place orders with real-time total calculation</li>
+            <p class="font-semibold ml-1">Admin Side:</p>
+            <li>Manage orders product listings, and categories</li>
+            <li>View order history and update order status</li>
+            <li>Responsive admin dashboard with secure login</li>
+          </ul>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Technologies & Implementation
+          </h1>
+          <p
+            class="font-light text-gray-700 px-1 text-xs md:text-base font-light md:px-9 mt-2"
+          >
+            Built with PHP and MySQL for backend and data management, using
+            Tailwind CSS and JavaScript for a responsive UI. Includes modular
+            dashboards for users and admins to manage orders and products.
+          </p>
+          <div
+            class="flex flex-wrap gap-1 px-1 mt-3 md:text-base md:px-9 md:mt-3 md:gap-3"
+          >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-php-plain text-2xl"></i>
+              PHP</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-html5-plain"></i>
+              HTML</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-css3-plain"></i>
+              CSS</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-javascript-plain"></i>
+              JavaScript</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-mysql-original"></i>
+              MySQL</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-tailwindcss-original"></i>
+
+              Tailwind</span
+            >
+          </div>
+
+          <div
+            class="felx flex-col items-center justify-center mt-5 bg-yellow-50 px-1 rounded-lg border-2 border-yellow-100 border-solid md:ml-9 md:mr-9"
+          >
+            <h1
+              class="text-orange-900 mt-2 ml-2 font-medium md:mt-3 md:ml-5 md:text-lg"
+            >
+              <i class="uil uil-clipboard-notes"></i>Important Notice
+            </h1>
+            <p class="text-yellow-800 mt-2 ml-2 mb-2 font-light text-sm">
+              Admin access is restricted, but you can view a preview of its
+              features below.
+            </p>
+            <a href="#" class="text-sm ml-2 text-purple-500"
+              >View here<i class="uil uil-external-link-alt ml-1"></i
+            ></a>
+          </div>
+
+          <a href="https://burgerkasamen.byethost15.com/" target="_blank">
+            <button
+              class="flex items-center justify-center gap-1 mt-3 px-1 bg-purple-600 text-white text-xs font-semibold px-4 py-2 md:text-base md:font-semibold md:px-4 md:py-2 md:gap-1 md:ml-9 md:mt-10 rounded-lg"
+            >
+              <i class="uil uil-external-link-alt text-lg md:text-xl"></i> View
+              Live Site
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script>
+      //AMS dialog modal
+      // Helper function to show modal with animation
+      function showModal(modal) {
+        modal.classList.remove("hidden");
+        const content = modal.querySelector("div.bg-white");
+        content.classList.remove("fade-out");
+        content.classList.add("fade-in");
+      }
+
+      // Helper function to hide modal with animation
+      function hideModal(modal) {
+        const content = modal.querySelector("div.bg-white");
+        content.classList.remove("fade-in");
+        content.classList.add("fade-out");
+        content.addEventListener(
+          "animationend",
+          () => {
+            modal.classList.add("hidden");
+          },
+          { once: true }
+        );
+      }
+
+      const amsModal = document.getElementById("amsModal");
+      const amsBtn = document.getElementById("amsBtn");
+      const amsClose = document.getElementById("amsCloseBtn");
+      const amsExpand = document.getElementById("amsExpandBtn");
+      const amsCard = document.getElementById("amsCard");
+
+      amsBtn.addEventListener("click", () => showModal(amsModal));
+      amsExpand.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showModal(amsModal);
+      });
+      amsCard.addEventListener("click", () => showModal(amsModal));
+      amsClose.addEventListener("click", () => hideModal(amsModal));
+      amsModal.addEventListener("click", (e) => {
+        if (e.target === amsModal) hideModal(amsModal);
+      });
+
+      const osModal = document.getElementById("osModal");
+      const osBtn = document.getElementById("osBtn");
+      const osExpand = document.getElementById("osExpandBtn");
+      const osClose = document.getElementById("osCloseBtn");
+      const osCard = document.getElementById("osCard");
+
+      osBtn.addEventListener("click", () => showModal(osModal));
+      osExpand.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showModal(osModal);
+      });
+      osCard.addEventListener("click", () => showModal(osModal));
+      osClose.addEventListener("click", () => hideModal(osModal));
+      osModal.addEventListener("click", (e) => {
+        if (e.target === osModal) hideModal(osModal);
+      });
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const content = document.getElementById("pageContent");
+        content.classList.remove("opacity-0");
+        content.classList.add("fade-in");
+      });
+    </script>
+  </body>
+</html>
