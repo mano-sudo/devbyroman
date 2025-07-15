@@ -521,8 +521,8 @@ h3 {
 
 .skills-list span {
   font-size: 14px;
-  background: var(--first-color);
   color: var(--color-white);
+  box-shadow: var(--first-shadow-color);
   padding: 2px 10px;
   border-radius: 5px;
 }
