@@ -138,7 +138,7 @@
           </div>
         </section>
 
-        <section class="grid md:grid-cols-2 lg:grid-cols-2 gap-y-6 p-6">
+        <section class="grid md:grid-cols-3 lg:grid-cols-3 gap-y-6 p-6">
           <div
             class="group bg-white rounded-2xl border border-gray-100 shadow-xl p-6 w-full max-w-sm mx-auto transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:border-purple-200 cursor-pointer"
           >
@@ -154,8 +154,9 @@
                   Attendance Monitoring System
                 </h3>
                 <p class="text-sm text-gray-600 mt-2 leading-snug">
-                  Developed a web-based attendance monitoring system that
-                  enables employees...
+                  A web-based attendance monitoring system built with PHP,
+                  MySQL, Bootstrap, and JavaScript. Enables real-time logging of
+                  employee...
                 </p>
                 <!--Tags-->
                 <div class="flex flex-wrap gap-x-1 gap-y-2 mt-5">
@@ -199,6 +200,59 @@
           <div
             class="group bg-white rounded-2xl border border-gray-100 shadow-xl p-6 w-full max-w-sm mx-auto transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:border-purple-200 cursor-pointer"
           >
+            <a id="ohCard">
+              <div
+                class="bg-cover bg-no-repeat bg-center p-6 rounded-2xl relative overflow-hidden h-40"
+                style="background-image: url('assets/projects/outfithaven.png')"
+              ></div>
+
+              <!--Text Content-->
+              <div class="mt-5">
+                <h3 class="font-bold text-lg group-hover:text-purple-500">
+                  OutfitHaven: Responsive E-Commerce Platform
+                </h3>
+                <p class="text-sm text-gray-600 mt-2 leading-snug">
+                  A Web-Based E-Commerce Platform for Local Fashion Brands in
+                  the Philippines Fashion Depot is a modern web-based
+                  e-commerce...
+                </p>
+                <!--Tags-->
+                <div class="flex flex-wrap gap-x-1 gap-y-2 mt-5">
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md"
+                    ><i class="devicon-react-original"></i>ReactJS</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-0 rounded-md md:gap-6"
+                    ><i class="devicon-css3-plain"></i> CSS</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-1 rounded-md"
+                    ><i class="devicon-php-plain text-2xl"></i> PHP</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1 justify-center bg-violet-100 text-purple-500 font-light text-xs sm:text-xs px-3 py-1 rounded-md"
+                    ><i class="devicon-mysql-original"></i>MySQL</span
+                  >
+                </div>
+                <span class="flex items-center justify-between gap-6">
+                  <button
+                    id="ohBtn"
+                    class="text-sm sm:text-sm text-purple-500 font-medium mt-5 ml-2"
+                  >
+                    View Details
+                  </button>
+                  <button id="ohExpandBtn" class="text-purple-500 mt-3">
+                    <i class="uil uil-expand-from-corner text-xl"></i>
+                  </button>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="group bg-white rounded-2xl border border-gray-100 shadow-xl p-6 w-full max-w-sm mx-auto transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:border-purple-200 cursor-pointer"
+          >
             <a id="osCard">
               <div
                 class="bg-cover bg-no-repeat bg-center p-6 rounded-2xl relative overflow-hidden h-40"
@@ -210,8 +264,9 @@
                   Ordering System
                 </h3>
                 <p class="text-sm text-gray-500 mt-2 leading-snug">
-                  Developed a full-stack burger ordering system using PHP,
-                  MySQL, Tailwind CSS, and JavaScript...
+                  A full-stack burger ordering system built with PHP, MySQL,
+                  Tailwind CSS, and JavaScript. Supports customer ordering with
+                  cart...
                 </p>
                 <div class="flex flex-wrap gap-x-1 gap-y-2 mt-5">
                   <span
@@ -388,6 +443,146 @@
           </div>
 
           <a href="https://bfpbpansol.byethost7.com/?i=1" target="_blank">
+            <button
+              class="flex items-center justify-center gap-1 mt-3 px-1 bg-purple-600 text-white text-xs font-semibold px-4 py-2 md:text-base md:font-semibold md:px-4 md:py-2 md:gap-1 md:ml-9 md:mt-10 rounded-lg"
+            >
+              <i class="uil uil-external-link-alt text-lg md:text-xl"></i> View
+              Live Site
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!--Outfit haven modal-->
+      <div
+        id="ohModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden"
+      >
+        <div
+          class="bg-white rounded-4xl shadow-xl w-full max-w-4xl max-h-[70vh] mt-10 p-6 relative border-b border-b-gray-700 overflow-y-auto"
+        >
+          <button
+            id="ohCloseBtn"
+            class="absolute top-4 right-4 text-rose-600 text-2xl font-bold"
+          >
+            &times;
+          </button>
+
+          <h3
+            class="text-4xl md:text-3xl font-semibold mb-1 text-black-950 md:px-9 md:text-4xl"
+          >
+            OutfitHaven: Responsive
+            <span class="text-purple-500"> E-Commerce</span> Platform
+          </h3>
+
+          <p
+            class="inline-text items-center text-xs mt-0 text-gray-700 p-1 md:px-10 md:text-base font-light"
+          >
+            A Web-Based E-Commerce Platform for Local Fashion Brands in the
+            Philippines Fashion Depot is a modern web-based e-commerce system
+            built with React, Tailwind CSS, PHP, and MySQL, designed to showcase
+            and support Philippine local fashion brands. The platform offers a
+            smooth and dynamic shopping experience, enabling customers to browse
+            collections in real-time, securely place orders, and engage directly
+            with their favorite local designers.
+          </p>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Project Objective
+          </h1>
+          <p
+            class="font-light text-gray-700 px-1 text-xs md:text-base font-light md:px-9 mt-2"
+          >
+            Build a web-based e-commerce platform using React, Tailwind CSS,
+            PHP, and MySQL for seamless browsing of local Philippine fashion
+            brands, secure checkout, and streamlined product and order
+            management via an intuitive admin dashboard.
+          </p>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Key Features
+          </h1>
+          <ul
+            class="list-disc list-inside px-1 md:px-9 text-xs md:text-base font-light text-gray-700 mt-2 space-y-2"
+          >
+            <li>
+              Developed dynamic product catalog with real-time browsing and
+              filtering
+            </li>
+            <li>
+              Implemented responsive, mobile-first UI using Tailwind CSS and
+              React for seamless multi-device shopping
+            </li>
+            <li>
+              Implemented responsive UI using Tailwind CSS for seamless
+              multi-device shopping experience
+            </li>
+            <li>
+              Designed scalable architecture to support multiple local
+              Philippine fashion brands
+            </li>
+          </ul>
+
+          <h1 class="mt-10 px-1 font-medium md:px-9 md:font-medium">
+            Technologies & Implementation
+          </h1>
+          <p
+            class="font-light text-gray-700 px-1 text-xs md:text-base font-light md:px-9 mt-2"
+          >
+            Built with PHP and MySQL for backend development and data
+            management. Utilized React and Tailwind CSS to create a responsive,
+            modern, and user-friendly interface that enhances product browsing,
+            shopping experience, and admin control.
+          </p>
+          <div
+            class="flex flex-wrap gap-1 px-1 mt-3 md:text-base md:px-9 md:mt-3 md:gap-3"
+          >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-php-plain text-2xl"></i>
+              PHP</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-react-original"></i>
+              ReactJS</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-css3-plain"></i>
+              CSS</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-mysql-original"></i>
+              MySQL</span
+            >
+            <span
+              class="inline-flex items-center justify-center bg-violet-100 text-purple-500 px-3 py-0 gap-1 rounded-lg md:text-xl md:py-1 md:px-4 md:gap-2"
+            >
+              <i class="devicon-tailwindcss-original"></i>
+              Tailwind</span
+            >
+          </div>
+
+          <div
+            class="felx flex-col items-center justify-center mt-5 bg-yellow-50 px-1 rounded-lg border-2 border-yellow-100 border-solid md:ml-9 md:mr-9"
+          >
+            <h1
+              class="text-orange-900 mt-2 ml-2 font-medium md:mt-3 md:ml-5 md:text-lg"
+            >
+              <i class="uil uil-clipboard-notes"></i>Important Notice
+            </h1>
+            <p class="text-yellow-800 mt-2 ml-2 mb-2 font-light text-sm">
+              OutfitHaven is currently a work in progress.
+            </p>
+          </div>
+
+          <a href="https://devbyroman-umber.vercel.app/" target="_blank">
             <button
               class="flex items-center justify-center gap-1 mt-3 px-1 bg-purple-600 text-white text-xs font-semibold px-4 py-2 md:text-base md:font-semibold md:px-4 md:py-2 md:gap-1 md:ml-9 md:mt-10 rounded-lg"
             >
@@ -609,6 +804,23 @@
         const content = document.getElementById("pageContent");
         content.classList.remove("opacity-0");
         content.classList.add("fade-in");
+      });
+
+      const ohModal = document.getElementById("ohModal"); // Make sure this matches your HTML
+      const ohBtn = document.getElementById("ohBtn");
+      const ohExpand = document.getElementById("ohExpandBtn");
+      const ohClose = document.getElementById("ohCloseBtn");
+      const ohCard = document.getElementById("ohCard");
+
+      ohBtn.addEventListener("click", () => showModal(ohModal));
+      ohExpand.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showModal(ohModal);
+      });
+      ohCard.addEventListener("click", () => showModal(ohModal));
+      ohClose.addEventListener("click", () => hideModal(ohModal));
+      ohModal.addEventListener("click", (e) => {
+        if (e.target === ohModal) hideModal(ohModal);
       });
     </script>
   </body>
