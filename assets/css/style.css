@@ -271,21 +271,19 @@ nav {
 }
 
 .featured-box {
-  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  min-height: 700px;
 }
 
 .featured-text {
-  position: relative;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  min-height: 80vh;
   flex-direction: column;
-  width: 50%;
-  padding-left: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .featured-text-card span {
@@ -757,6 +755,12 @@ footer {
 
   .project-box.small {
     width: 90%;
+  }
+  .featured-text-btn a {
+    font-size: x-small;
+  }
+  .featured-text-btn button {
+    font-size: x-small;
   }
 }
 
